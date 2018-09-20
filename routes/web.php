@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('dashboard');
 });
+
+Route::get('/projects', 'PagesController@projects');

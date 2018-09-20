@@ -19,14 +19,55 @@
    </ul>
 </li>
 <li class="header nav-small-cap">PERSONAL</li>
-<li class="active">
-   <a href="index.html">
+<li {{{ (Request::is('/') ? 'class=active' : '') }}}>
+   <a href="/">
    <i class="fa fa-dashboard"></i> <span>Dashboard</span>
    <span class="pull-right-container">
    <i class="fa fa-angle-right pull-right"></i>
    </span>
    </a>
 </li>
+
+
+
+<li {{{ (Request::is('projects') ? 'class=active' : '') }}}>
+   <a href="/projects">
+   <i class="fa fa-dashboard"></i> <span>Projets</span>
+   <span class="pull-right-container">
+   <i class="fa fa-angle-right pull-right"></i>
+   </span>
+   </a>
+</li>
+
+<li {{{ (Request::is('documents_management') ? 'class=active' : '') }}}>
+   <a href="index.html">
+   <i class="fa fa-dashboard"></i> <span>Espace Documents</span>
+   <span class="pull-right-container">
+   <i class="fa fa-angle-right pull-right"></i>
+   </span>
+   </a>
+</li>
+
+<li {{{ (Request::is('statistics') ? 'class=active' : '') }}}>
+   <a href="index.html">
+   <i class="fa fa-dashboard"></i> <span>Statistuqes</span>
+   <span class="pull-right-container">
+   <i class="fa fa-angle-right pull-right"></i>
+   </span>
+   </a>
+</li>
+
+
+<li {{{ (Request::is('cartography') ? 'class=active' : '') }}}>
+   <a href="index.html">
+   <i class="fa fa-dashboard"></i> <span>Cartographie</span>
+   <span class="pull-right-container">
+   <i class="fa fa-angle-right pull-right"></i>
+   </span>
+   </a>
+</li>
+
+
 
 
 </ul>

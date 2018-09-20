@@ -48,7 +48,6 @@ import icon and fonts Styles
 @import url(../../assets/vendor_components/flag-icon/css/flag-icon.css);
 @import url(../../assets/vendor_components/material-design-iconic-font/css/materialdesignicons.css);
 @import url(../../assets/vendor_components/simple-line-icons-master/css/simple-line-icons.css);
-@import url(../../assets/vendor_components/cryptocoins-master/webfont/cryptocoins.css);
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
 /*------------------------------------------------------------------
@@ -615,7 +614,7 @@ a:active, a:focus, a:hover {
     background-image:url(../../images//user-info.jpg);
 }
 .sidebar-menu .user-profile > a img {
-    width: 30px;
+    width: 60px;
     border-radius: 100%;
     margin-right: 10px;
 }
@@ -2253,7 +2252,6 @@ input[type="color"] {
     background-color: #465060;
 }
 /*box*/
-
 .small-box {
     position: relative;
     display: block;
@@ -2371,13 +2369,11 @@ input[type="color"] {
 .box-inverse .box-header{
   color: #fff !important;
 }
-.box-inverse .box-title{
-  color: #ffffff !important;
-}
 .box-inverse h1, .box-inverse h2, .box-inverse h3, .box-inverse h4, .box-inverse h5, .box-inverse h6,
+.box-inverse .box-title,
 .box-inverse small,
 .box-inverse .box-controls li > a {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: #fff !important;
 }
 
 .box-inverse .box-title small {
@@ -2621,7 +2617,7 @@ input[type="color"] {
 
 .box.box-solid.box-primary>.box-header {
     color: #fff;
-    background: #7460ee;
+    background: #465161;
 }
 .box.box-solid.box-primary>.box-header .btn, .box.box-solid.box-primary>.box-header a {
     color: #455a64;
@@ -5891,12 +5887,14 @@ ul.panel-actions > li:first-child {
     flex-direction: column;
     border-radius: 0;
 }
+
 .modal-left .modal-dialog {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 360px;
+    width: 500px;
+
     max-width: 100%;
     margin: 0;
     -webkit-transform: translate(-100%, 0) !important;
@@ -5982,6 +5980,7 @@ ul.panel-actions > li:first-child {
     padding: 20px;
     font-size: 2.5rem;
     font-weight: 300;
+    
 }
 .modal-fill .modal-header {
     border-bottom: none;
@@ -7148,7 +7147,7 @@ ul.flexbox {
 
 .blockquote-inverse,
 .blockquote-inverse footer {
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
 }
 .card-inverse {
     color: #fff !important;
@@ -12076,6 +12075,7 @@ tfoot input {
 }
 }.modal-header {
     border-bottom-color: #f4f4f4;
+    background-color: #28373e;
 }
 .modal-footer {
     border-top-color: #f4f4f4;
@@ -13171,9 +13171,15 @@ tfoot input {
     padding: 0px 15px;
     display: inline-block;
 }
+.dask .fc-day-number {
+     font-size: 1rem; 
+}
 @media (min-width: 1100px) {
 .fc-basic-view .fc-day-number {
     padding: 10px 15px;
+}
+.dask .fc-basic-view .fc-day-number {
+    padding: 10px 15px 0px;
 }
 }
 #add-new-event {
@@ -14302,7 +14308,7 @@ animation: AnimationName 20s ease infinite;
     border: 0;
 }
 .no-radius {
-    border-radius: 0 !important;
+    border-radius: 0;
 }
 .no-padding {
     padding: 0;
@@ -15309,13 +15315,29 @@ hr {
 }
 
 /*-- //timer --*/
-/*---web tickers---*/
-.tickers-block .tickercontainer .cc {
-    font-size: 20px;
-    margin: 0;
+.height-div:before {
+    background-image: url(../../images/up-arrow.png);
+    content: "";
+    background-size: 100%;
+    width: 10px;
+    height: 34px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 0px;
+	background-repeat: no-repeat;
 }
-.tickers-block .tickercontainer li {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 45px;
+.height-div:after {
+    background-image: url(../../images/down-arrow.png);
+    content: "";
+    background-size: 100%;
+    width: 10px;
+    height: 33px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }

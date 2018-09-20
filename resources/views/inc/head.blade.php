@@ -8,7 +8,7 @@
     <title>Fab Admin - Dashboard</title>
     
 	<!-- Bootstrap 4.0-->
-	<link rel="stylesheet" href="{{asset('vendor_components/bootstrap/dist/css/bootstrap.css')}}">
+	<link rel="stylesheet" href="{{asset('css/bootstrap/dist/css/bootstrap.css')}}">
 	
 	<!-- Bootstrap extend-->
 	<link rel="stylesheet" href="{{asset('css/bootstrap-extend.css')}}">
@@ -16,17 +16,14 @@
 	<!-- theme style -->
 	<link rel="stylesheet" href="{{asset('css/master_style.css')}}">
 
-	<!-- font awesome -->
-	<link rel="stylesheet" href="{{asset('css/all.min.css')}}">
 
-		<!-- material design icons -->
+	<!-- material design icons -->
 	<link rel="stylesheet" href="//cdn.materialdesignicons.com/2.7.94/css/materialdesignicons.min.css">
 	<!-- font awesome -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<!-- Fab Admin skins -->
-	<link rel="stylesheet" href="{{asset('css/skins/_all-skins.css')}}">
-	
+	<link rel="stylesheet" href="{{asset('css/skins/_all-skins.css')}}">	
 	
     
 	<!--amcharts -->

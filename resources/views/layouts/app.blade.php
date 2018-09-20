@@ -37,7 +37,8 @@
          <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <!-- Main content -->
-            <section class="centent">
+            <section class="centent">              
+              @yield('filter_buttons')
             </section>
             <!-- /.content -->
          </div>
@@ -54,50 +55,7 @@
             </ul>
             <!-- Tab panes -->
             <div class="tab-content">
-               <!-- Home tab content -->
-               <div class="tab-pane" id="control-sidebar-home-tab">
-                  <h3 class="control-sidebar-heading">Recent Activity</h3>
-                  <ul class="control-sidebar-menu">
-                     <li>
-                        <a href="javascript:void(0)">
-                           <i class="menu-icon fa fa-birthday-cake bg-danger"></i>
-                           <div class="menu-info">
-                              <h4 class="control-sidebar-subheading">Admin Birthday</h4>
-                              <p>Will be July 24th</p>
-                           </div>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="javascript:void(0)">
-                           <i class="menu-icon fa fa-user bg-warning"></i>
-                           <div class="menu-info">
-                              <h4 class="control-sidebar-subheading">Jhone Updated His Profile</h4>
-                              <p>New Email : jhone_doe@demo.com</p>
-                           </div>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="javascript:void(0)">
-                           <i class="menu-icon fa fa-envelope-o bg-info"></i>
-                           <div class="menu-info">
-                              <h4 class="control-sidebar-subheading">Disha Joined Mailing List</h4>
-                              <p>disha@demo.com</p>
-                           </div>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="javascript:void(0)">
-                           <i class="menu-icon fa fa-file-code-o bg-success"></i>
-                           <div class="menu-info">
-                              <h4 class="control-sidebar-subheading">Code Change</h4>
-                              <p>Execution time 15 Days</p>
-                           </div>
-                        </a>
-                     </li>
-                  </ul>
-                  <!-- /.control-sidebar-menu -->
-                  <!-- /.control-sidebar-menu -->
-               </div>
+              
                <!-- /.tab-pane -->
                <!-- Stats tab content -->
                <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
