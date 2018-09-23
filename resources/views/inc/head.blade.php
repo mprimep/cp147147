@@ -17,6 +17,9 @@
 	<link rel="stylesheet" href="{{asset('css/master_style.css')}}">
 
 
+	<!-- theme style -->
+	<link rel="stylesheet" href="{{asset('datatable/datatables.css')}}">
+
 	<!-- material design icons -->
 	<link rel="stylesheet" href="//cdn.materialdesignicons.com/2.7.94/css/materialdesignicons.min.css">
 	<!-- font awesome -->
@@ -36,3 +39,5 @@
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+
+	@yield('added_css')

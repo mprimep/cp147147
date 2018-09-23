@@ -4,7 +4,7 @@
 <ul class="sidebar-menu" data-widget="tree">
 <li class="user-profile treeview">
    <a href="index.html">
-   <img src="../images/user5-128x128.jpg" alt="user">
+   <img src="{{asset('svg/manager.svg')}}" alt="user">
    <span>Juliya Brus</span>
    <span class="pull-right-container">
    <i class="fa fa-angle-right pull-right"></i>

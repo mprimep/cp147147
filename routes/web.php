@@ -15,4 +15,16 @@ Route::get('/', function () {
     return view('dashboard');
 });
 
+
+Route::post('/data/projects','DatatablesController@getProjects')->name('dataProcessing');
+
+
 Route::get('/projects', 'PagesController@projects');
+
+//add all the routes to the funtions controller projects
+Route::resource('projects','ProjectsController');
+
+
+
+
+?>

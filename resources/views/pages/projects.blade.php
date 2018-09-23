@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('filter_buttons')
+@section('content')
 <div class="row">
     <div class="box box-solid box-primary">
                 <div class="box-header with-border">

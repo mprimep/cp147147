@@ -5,7 +5,7 @@
 	<script src="{{asset('js/popper/dist/popper.min.js')}}"></script>
 	
 	<!-- Bootstrap 4.0-->
-	<script src="{{asset('js/bootstrap/dist/js/bootstrap.js')}}"></script>	
+	<script src="{{asset('css/bootstrap/dist/js/bootstrap.js')}}"></script>	
 	
 	<!-- webticker -->
 	<script src="{{asset('js/Web-Ticker-master/jquery.webticker.min.js')}}"></script>
@@ -20,4 +20,6 @@
 	
 	<!-- Fab Admin App -->
 	<script src="{{asset('js/template.js')}}"></script>
+
+	@yield('added_script')
 

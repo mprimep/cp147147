@@ -38,7 +38,7 @@
             <!-- Content Header (Page header) -->
             <!-- Main content -->
             <section class="centent">              
-              @yield('filter_buttons')
+              @yield('content')
             </section>
             <!-- /.content -->
          </div>
